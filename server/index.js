@@ -14,4 +14,4 @@ app.use(bodyParser.json());
 
 app.listen(PORT, () => console.log('server is listening on port ', PORT));
 
-app.get('/parking/location', yelpAPI.searchLocation);
+app.get('/parking/location/:location', yelpAPI.searchLocation);

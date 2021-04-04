@@ -3,7 +3,7 @@ const axios = require('axios');
 
 module.exports = {
   searchLocation: (req, res) => {
-    axios.get('https://api.yelp.com/v3/businesses/search?term=delis&latitude=37.786882&longitude=-122.399972', {
+    axios.get(`https://api.yelp.com/v3/businesses/search?term=Parking&location=${req.params.location}`, {
       headers: {
         'Authorization': `Bearer ${API_KEY}`
       }
