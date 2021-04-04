@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
+const yelpAPI = require('../yelpAPI/api.js');
 
 const PORT = 3000;
 const PATH = path.join(__dirname, '/../client/dist');
@@ -12,3 +13,5 @@ app.use('/', express.static(PATH));
 app.use(bodyParser.json());
 
 app.listen(PORT, () => console.log('server is listening on port ', PORT));
+
+app.get('/parking/location', yelpAPI.searchLocation);
