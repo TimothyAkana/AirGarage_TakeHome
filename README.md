@@ -1,12 +1,12 @@
 # Project Name
-Project description goes here...
+Take Home test for Air Garage to find lwoest rated parking lots from Yelp API with a 1 hour timeline.
 
 ## Setup
 
 Clone the repo:
 
 ```
-$ git clone https://github.com/TimothyAkana/BaseTemplate.git <PROJECT NAME>
+$ git clone https://github.com/TimothyAkana/AirGarage_TakeHome.git <PROJECT NAME>
 ```
 
 Go into the directory:
@@ -19,6 +19,10 @@ Install the dependences:
 
 ```
 $ npm install
+```
+
+```
+copy the 'example.apiKey.js' file without the 'example.' and paste your API key in.
 ```
 
 ## Usage
